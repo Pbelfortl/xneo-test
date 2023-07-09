@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,200;1,200&display=swap");
+
+body {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgb(119, 162, 243) 0%,
+    rgb(240, 112, 182) 85%
+  );
+}
+.board {
+  background-color: rgba(240, 248, 255, 0.7);
+  width: 280px;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  background-color: rgb(243, 42, 199);
+  margin: 0px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+p {
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px 8px;
+  padding: 0px 6px;
+}
+
+.add-card {
+  background-color: rgb(187, 182, 173);
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px 8px;
+  padding: 0 6px;
+}
+.add-card:hover {
+  cursor: pointer;
+}
+
+.x {
+  background-color: grey;
+  width: 9px;
+  height: 21px;
+  border-radius: 50%;
+  font-size: 14.5px;
+  font-weight: bold;
+}
+
+.x:hover {
+  cursor: pointer;
+  background-color: rgb(243, 42, 199);
+}
+
+ul {
+  list-style-type: none;
+  height: 300px;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+li {
+  background-color: rgb(187, 182, 173);
+  box-shadow: 2px 2px rgb(121, 121, 121);
+  border-radius: 5px;
+  min-height: 40px;
+  justify-content: space-between;
+  margin: 8px 10px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+li:hover {
+  cursor: move;
+}

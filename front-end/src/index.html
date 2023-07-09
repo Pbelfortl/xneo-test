@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadTasks()">
+  <div class="board">
+    <h1>A fazer</h1>
+
+    <ul id="toDo" ondrop="drop(event, this.id)" ondragover="over(event)"></ul>
+
+    <div class="add-card" onclick="addCard(this)">
+      <p>Adicionar tarefa</p>
+    </div>
+  </div>
+  <div class="board">
+    <h1>Fazendo</h1>
+    <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)"></ul>
+
+    <div class="add-card" onclick="addCard(this)">
+      <p>Adicionar tarefa</p>
+    </div>
+  </div>
+  <div class="board">
+    <h1>Entregue</h1>
+    <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)"></ul>
+    <div class="add-card" onclick="addCard(this)">
+      <p>Adicionar tarefa</p>
+    </div>
+  </div>
+
+  <script src="./jquery.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
